@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+  }
+  
+h1{
+    text-align: center;
+}
+
+p {
+    background-color: #bfbfbf;
+    border: 2px solid black;
+    height: 150px;
+    margin-right: 10px;
+    padding: 40px 10px 5px 10px;
+    position : relative;
+}
+
+
+#container {
+    position: relative;
+}
+
+#p1 , #p2, #p3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    height: 35px;
+    width: 120px;
+    padding: 7px;
+    text-align: center;
+}
+#p1{
+    background-color: #D59898;
+}
+#p2 {
+    background-color:#C14543 ;
+    color: white;
+}
+#p3 {
+    background-color: #E5D198;
+}
+
+.row {
+    width: 100%;
+}
+
+
+/* Large devices - pc's */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Medium devices - tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .col-md-12{
+        float: left;
+        width: 100%;
+    }
+
+}
+
+/* small device - mobile */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float:left;
+        width: 100%;
+        }
+}
